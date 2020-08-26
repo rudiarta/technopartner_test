@@ -172,6 +172,7 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\BalanceServiceProvider::class,
         App\Providers\CategoryServiceProvider::class,
+        App\Providers\TransactionServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,

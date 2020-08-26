@@ -19,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'Home\HomeController@index');
 Route::get('/category', 'Category\CategoryController@index');
+Route::get('/transaction', 'Transaction\TransactionController@index');
