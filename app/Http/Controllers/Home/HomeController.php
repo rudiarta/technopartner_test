@@ -26,6 +26,10 @@ class HomeController extends Controller
         $incomeBalance =  $this->balanceService->CheckBalance(self::INCOME_BALANCE);
         $outcomeBalance =  $this->balanceService->CheckBalance(self::OUTCOME_BALANCE);
 
-        return "test";
+        return view('home', [
+                                'current' => $currentBalance,
+                                'income' => $incomeBalance,
+                                'outcome' => $outcomeBalance
+                            ]);
     }
 }
