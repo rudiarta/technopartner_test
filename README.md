@@ -1,7 +1,9 @@
 ## How To Use
-Pertama config database terlebih dahulu file `.env` ke koneksi mysql local <br>
+Pertama copy file `.env.example` menjadi `.env` config database terlebih dahulu file `.env` ke koneksi mysql local<br>
 setelah itu jalankan command berikut:<br>
 ```sh
+    composer install
+    php artisan key:generate
     php artisan migrate
 ```
 lalu jalankan query pada file `query.sql` ke database yang digunakan <br>
